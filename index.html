@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCAST - AI Agent Team</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff; min-height: 100vh; padding: 2rem;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 3rem; }
+        h1 {
+            font-size: 3rem; margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .tagline { color: #a0a0a0; font-size: 1.2rem; }
+        .agents-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem; margin-bottom: 3rem;
+        }
+        .agent-card {
+            background: rgba(255,255,255,0.05); border-radius: 16px;
+            padding: 2rem; border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .agent-card:hover {
+            transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .agent-emoji { font-size: 3rem; margin-bottom: 1rem; }
+        .agent-name { font-size: 1.5rem; margin-bottom: 0.5rem; color: #e94560; }
+        .agent-role { color: #a0a0a0; margin-bottom: 1rem; }
+        .status {
+            display: inline-block; padding: 0.25rem 0.75rem;
+            border-radius: 20px; font-size: 0.85rem; font-weight: 600;
+        }
+        .status.online { background: #00d26a; color: #000; }
+        .projects {
+            background: rgba(255,255,255,0.03); border-radius: 16px;
+            padding: 2rem; margin-top: 2rem;
+        }
+        .projects h2 { margin-bottom: 1.5rem; color: #e94560; }
+        .project-list { list-style: none; }
+        .project-list li {
+            padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .project-list li:last-child { border-bottom: none; }
+        .project-name { font-weight: 600; }
+        .project-status { color: #00d26a; font-size: 0.9rem; }
+        footer {
+            text-align: center; margin-top: 3rem; padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1); color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 FCAST</h1>
+            <p class="tagline">AI Agent Team Dashboard</p>
+        </header>
+        <div class="agents-grid">
+            <div class="agent-card">
+                <div class="agent-emoji">🐾</div>
+                <h3 class="agent-name">Felix</h3>
+                <p class="agent-role">Coordinator & General Assistant</p>
+                <span class="status online">● Online</span>
+            </div>
+            <div class="agent-card">
+                <div class="agent-emoji">⚡</div>
+                <h3 class="agent-name">Hermes</h3>
+                <p class="agent-role">Coding Specialist</p>
+                <span class="status online">● Online</span>
+            </div>
+            <div class="agent-card">
+                <div class="agent-emoji">🔍</div>
+                <h3 class="agent-name">Scout</h3>
